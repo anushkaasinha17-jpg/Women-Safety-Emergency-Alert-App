@@ -1,0 +1,90 @@
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="hdr" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f43f6e"/>
+      <stop offset="100%" style="stop-color:#f97fb0"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#b5708a"/>
+    </marker>
+  </defs>
+  <rect width="900" height="560" fill="#fff5f7"/>
+  <!-- header -->
+  <rect width="900" height="50" fill="url(#hdr)"/>
+  <text x="450" y="32" text-anchor="middle" fill="white" font-size="17" font-weight="700">Use Case Diagram – SafeHer Women Safety App</text>
+
+  <!-- System boundary -->
+  <rect x="190" y="70" width="540" height="460" rx="16" fill="#fffafc" stroke="#fce7ef" stroke-width="2"/>
+  <text x="460" y="94" text-anchor="middle" fill="#b5708a" font-size="12">«system» SafeHer Application</text>
+
+  <!-- Actors -->
+  <!-- User/Woman -->
+  <circle cx="80" cy="200" r="24" fill="none" stroke="#f43f6e" stroke-width="2.5"/>
+  <line x1="80" y1="224" x2="80" y2="280" stroke="#f43f6e" stroke-width="2"/>
+  <line x1="48" y1="248" x2="112" y2="248" stroke="#f43f6e" stroke-width="2"/>
+  <line x1="80" y1="280" x2="56" y2="310" stroke="#f43f6e" stroke-width="2"/>
+  <line x1="80" y1="280" x2="104" y2="310" stroke="#f43f6e" stroke-width="2"/>
+  <text x="80" y="330" text-anchor="middle" fill="#f43f6e" font-size="13" font-weight="700">Woman User</text>
+
+  <!-- Admin -->
+  <circle cx="820" cy="200" r="24" fill="none" stroke="#d4967e" stroke-width="2.5"/>
+  <line x1="820" y1="224" x2="820" y2="280" stroke="#d4967e" stroke-width="2"/>
+  <line x1="788" y1="248" x2="852" y2="248" stroke="#d4967e" stroke-width="2"/>
+  <line x1="820" y1="280" x2="796" y2="310" stroke="#d4967e" stroke-width="2"/>
+  <line x1="820" y1="280" x2="844" y2="310" stroke="#d4967e" stroke-width="2"/>
+  <text x="820" y="330" text-anchor="middle" fill="#d4967e" font-size="13" font-weight="700">Admin / Authority</text>
+
+  <!-- Trusted Contact -->
+  <circle cx="820" cy="420" r="24" fill="none" stroke="#c084fc" stroke-width="2.5"/>
+  <line x1="820" y1="444" x2="820" y2="500" stroke="#c084fc" stroke-width="2"/>
+  <line x1="788" y1="468" x2="852" y2="468" stroke="#c084fc" stroke-width="2"/>
+  <line x1="820" y1="500" x2="796" y2="530" stroke="#c084fc" stroke-width="2"/>
+  <line x1="820" y1="500" x2="844" y2="530" stroke="#c084fc" stroke-width="2"/>
+  <text x="820" y="548" text-anchor="middle" fill="#c084fc" font-size="12" font-weight="700">Trusted Contact</text>
+
+  <!-- Gate/Campus -->
+  <circle cx="80" cy="430" r="24" fill="none" stroke="#6ee7b7" stroke-width="2.5"/>
+  <line x1="80" y1="454" x2="80" y2="510" stroke="#6ee7b7" stroke-width="2"/>
+  <line x1="48" y1="478" x2="112" y2="478" stroke="#6ee7b7" stroke-width="2"/>
+  <line x1="80" y1="510" x2="56" y2="540" stroke="#6ee7b7" stroke-width="2"/>
+  <line x1="80" y1="510" x2="104" y2="540" stroke="#6ee7b7" stroke-width="2"/>
+  <text x="80" y="550" text-anchor="middle" fill="#6ee7b7" font-size="12" font-weight="700">SMS / Notification</text>
+
+  <!-- Use Cases -->
+  <ellipse cx="380" cy="130" rx="120" ry="28" fill="#fff5f7" stroke="#f43f6e" stroke-width="1.5"/>
+  <text x="380" y="135" text-anchor="middle" fill="#3d1a2e" font-size="12">Register / Login (OTP)</text>
+
+  <ellipse cx="600" cy="130" rx="120" ry="28" fill="#fff5f7" stroke="#f43f6e" stroke-width="1.5"/>
+  <text x="600" y="135" text-anchor="middle" fill="#3d1a2e" font-size="12">Add Trusted Contacts</text>
+
+  <ellipse cx="360" cy="210" rx="120" ry="28" fill="#ffe4ec" stroke="#f43f6e" stroke-width="2"/>
+  <text x="360" y="215" text-anchor="middle" fill="#c2185b" font-size="12" font-weight="700">Trigger SOS Alert</text>
+
+  <ellipse cx="600" cy="210" rx="120" ry="28" fill="#fff5f7" stroke="#f43f6e" stroke-width="1.5"/>
+  <text x="600" y="215" text-anchor="middle" fill="#3d1a2e" font-size="12">Share Live Location</text>
+
+  <ellipse cx="380" cy="295" rx="120" ry="28" fill="#fff5f7" stroke="#c084fc" stroke-width="1.5"/>
+  <text x="380" y="300" text-anchor="middle" fill="#3d1a2e" font-size="12">Receive SOS Notification</text>
+
+  <ellipse cx="600" cy="295" rx="120" ry="28" fill="#fff5f7" stroke="#f43f6e" stroke-width="1.5"/>
+  <text x="600" y="300" text-anchor="middle" fill="#3d1a2e" font-size="12">Fake Call / Check-In</text>
+
+  <ellipse cx="380" cy="380" rx="120" ry="28" fill="#fff5f7" stroke="#d4967e" stroke-width="1.5"/>
+  <text x="380" y="385" text-anchor="middle" fill="#3d1a2e" font-size="12">Mark Safe / Cancel Alert</text>
+
+  <ellipse cx="600" cy="380" rx="120" ry="28" fill="#fff5f7" stroke="#d4967e" stroke-width="1.5"/>
+  <text x="600" y="385" text-anchor="middle" fill="#3d1a2e" font-size="12">View Incident Dashboard</text>
+
+  <ellipse cx="490" cy="465" rx="120" ry="28" fill="#fff5f7" stroke="#d4967e" stroke-width="1.5"/>
+  <text x="490" y="470" text-anchor="middle" fill="#3d1a2e" font-size="12">View Safety Heatmap</text>
+
+  <!-- Connections -->
+  <line x1="104" y1="195" x2="258" y2="135" stroke="#f43f6e" stroke-width="1.2" stroke-dasharray="5" marker-end="url(#arr)"/>
+  <line x1="104" y1="205" x2="238" y2="210" stroke="#f43f6e" stroke-width="1.2" stroke-dasharray="5" marker-end="url(#arr)"/>
+  <line x1="104" y1="215" x2="258" y2="295" stroke="#f43f6e" stroke-width="1.2" stroke-dasharray="5" marker-end="url(#arr)"/>
+  <line x1="104" y1="220" x2="258" y2="375" stroke="#f43f6e" stroke-width="1.2" stroke-dasharray="5" marker-end="url(#arr)"/>
+  <line x1="796" y1="195" x2="722" y2="135" stroke="#d4967e" stroke-width="1.2" stroke-dasharray="5" marker-end="url(#arr)"/>
+  <line x1="796" y1="210" x2="722" y2="380" stroke="#d4967e" stroke-width="1.2" stroke-dasharray="5" marker-end="url(#arr)"/>
+  <line x1="796" y1="415" x2="502" y2="295" stroke="#c084fc" stroke-width="1.2" stroke-dasharray="5" marker-end="url(#arr)"/>
+  <line x1="104" y1="425" x2="258" y2="295" stroke="#6ee7b7" stroke-width="1.2" stroke-dasharray="5" marker-end="url(#arr)"/>
+</svg>
