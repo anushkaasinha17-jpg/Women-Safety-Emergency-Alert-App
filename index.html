@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SafeHer – Women Safety Emergency Alert App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ░░░░ FLOATING PETALS BG ░░░░ -->
+<div class="petals-bg" aria-hidden="true">
+  <span class="petal p1">🌸</span>
+  <span class="petal p2">✦</span>
+  <span class="petal p3">🌸</span>
+  <span class="petal p4">✦</span>
+  <span class="petal p5">🌸</span>
+  <span class="petal p6">✦</span>
+</div>
+
+<!-- ░░░░ NAVBAR ░░░░ -->
+<nav class="navbar">
+  <div class="nav-logo">
+    <span class="logo-heart">♡</span>
+    <span class="logo-text">Safe<em>Her</em></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#team">Team</a></li>
+  </ul>
+  <a href="#demo" class="nav-cta">Try Demo ♡</a>
+</nav>
+
+<!-- ░░░░ HERO ░░░░ -->
+<section class="hero" id="home">
+  <div class="hero-blob blob1"></div>
+  <div class="hero-blob blob2"></div>
+  <div class="hero-content">
+    <div class="hero-badge">💗 Women Safety · SPM Project 2025</div>
+    <h1 class="hero-title">
+      Safety is not a<br>
+      <em>privilege</em> —<br>
+      it's a <span class="hero-accent">right.</span>
+    </h1>
+    <p class="hero-sub">
+      SafeHer sends an instant SOS with your live location to trusted contacts and nearby authorities — in one tap, even with a locked screen.
+    </p>
+    <div class="hero-btns">
+      <a href="#demo" class="btn-primary">Explore Demo →</a>
+      <a href="#how" class="btn-ghost">How It Works</a>
+    </div>
+    <div class="hero-pills">
+      <span class="pill">📍 Live Location</span>
+      <span class="pill">🔔 Instant SOS Alert</span>
+      <span class="pill">👭 Trusted Contacts</span>
+      <span class="pill">🚔 Auto Police Ping</span>
+    </div>
+  </div>
+  <div class="hero-phone">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="phone-header">
+          <span class="phone-time">9:41</span>
+          <span class="phone-status">●●● 📶 🔋</span>
+        </div>
+        <div class="phone-app-header">
+          <span class="phone-logo">♡ SafeHer</span>
+          <span class="phone-safe">🟢 Safe</span>
+        </div>
+        <div class="sos-ring-wrap">
+          <div class="sos-ring ring3"></div>
+          <div class="sos-ring ring2"></div>
+          <div class="sos-ring ring1"></div>
+          <button class="sos-btn-phone" onclick="triggerSOSPhone(this)">SOS</button>
+        </div>
+        <div class="phone-contacts">
+          <p class="contacts-label">Trusted Contacts</p>
+          <div class="contact-row"><span class="contact-av">👩</span><span>Mom</span><span class="contact-status online">Online</span></div>
+          <div class="contact-row"><span class="contact-av">👩‍🦱</span><span>Priya</span><span class="contact-status online">Online</span></div>
+          <div class="contact-row"><span class="contact-av">👮‍♀️</span><span>Campus Security</span><span class="contact-status">24/7</span></div>
+        </div>
+        <div class="phone-loc">
+          <span>📍</span> Live location sharing <span class="loc-on">ON</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░░ STATS RIBBON ░░░░ -->
+<div class="stats-ribbon">
+  <div class="ribbon-stat"><span class="rnum">1 in 3</span><span class="rlabel">women face violence globally</span></div>
+  <div class="ribbon-div">✦</div>
+  <div class="ribbon-stat"><span class="rnum">&lt; 3 sec</span><span class="rlabel">SOS alert delivery time</span></div>
+  <div class="ribbon-div">✦</div>
+  <div class="ribbon-stat"><span class="rnum">5+</span><span class="rlabel">trusted contacts alerted</span></div>
+  <div class="ribbon-div">✦</div>
+  <div class="ribbon-stat"><span class="rnum">24/7</span><span class="rlabel">real-time monitoring</span></div>
+</div>
+
+<!-- ░░░░ FEATURES ░░░░ -->
+<section class="features" id="features">
+  <div class="section-tag">✦ What SafeHer Does</div>
+  <h2 class="section-title">Built with love.<br><em>Designed for protection.</em></h2>
+  <div class="features-grid">
+    <div class="feat-card">
+      <div class="feat-icon-wrap rose"><span>🆘</span></div>
+      <h3>One-Tap SOS</h3>
+      <p>A single tap triggers an emergency alert even on a locked screen. No unlocking, no fumbling — instant help.</p>
+    </div>
+    <div class="feat-card feat-hero-card">
+      <div class="feat-icon-wrap blush"><span>📍</span></div>
+      <h3>Live Location Sharing</h3>
+      <p>Your real-time GPS coordinates are sent to all trusted contacts and authorities the moment SOS is activated.</p>
+      <div class="card-ribbon">Core Feature</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon-wrap lilac"><span>🎙️</span></div>
+      <h3>Covert Audio Recording</h3>
+      <p>Silently records ambient audio after SOS. Saved securely as evidence in the cloud for authorities.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon-wrap mint"><span>👭</span></div>
+      <h3>Trusted Circle</h3>
+      <p>Add up to 10 trusted people — family, friends, campus security. All receive instant SMS + app notifications.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon-wrap peach"><span>🤖</span></div>
+      <h3>Fake Call Feature</h3>
+      <p>Feeling unsafe but can't act? Trigger a fake incoming call that lets you walk away from any uncomfortable situation.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon-wrap rose"><span>🗺️</span></div>
+      <h3>Safe Route Planner</h3>
+      <p>AI-powered route suggestions that avoid poorly-lit streets and high-incident zones based on community reports.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon-wrap blush"><span>🔔</span></div>
+      <h3>Check-In Reminders</h3>
+      <p>Set timed check-ins. If you don't confirm you're safe in time, an automatic SOS is sent on your behalf.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon-wrap lilac"><span>📊</span></div>
+      <h3>Incident Heatmap</h3>
+      <p>Community-powered safety heatmap shows zones with high reported incidents so you can plan your journey wisely.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░░ HOW IT WORKS ░░░░ -->
+<section class="how" id="how">
+  <div class="section-tag">✦ The Process</div>
+  <h2 class="section-title">From danger to safety<br><em>in seconds.</em></h2>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-bubble"><span>01</span></div>
+      <div class="tl-line"></div>
+      <div class="tl-card">
+        <h3>Sign Up & Build Your Circle</h3>
+        <p>Create your profile, verify your phone number, and add trusted contacts. Set your emergency message and preferred authorities.</p>
+      </div>
+    </div>
+    <div class="tl-item right">
+      <div class="tl-bubble"><span>02</span></div>
+      <div class="tl-line"></div>
+      <div class="tl-card">
+        <h3>Activate SOS — One Tap</h3>
+        <p>Press the SOS button (or shake the phone 3 times). An alert triggers instantly, even from the lock screen.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-bubble"><span>03</span></div>
+      <div class="tl-line"></div>
+      <div class="tl-card">
+        <h3>Contacts & Authorities Are Notified</h3>
+        <p>All trusted contacts receive an SMS + push notification with your live location link. Campus security is pinged automatically.</p>
+      </div>
+    </div>
+    <div class="tl-item right">
+      <div class="tl-bubble"><span>04</span></div>
+      <div class="tl-line"></div>
+      <div class="tl-card">
+        <h3>Live Tracking Begins</h3>
+        <p>Contacts can track your movement in real-time on a shared map until you mark yourself safe or help arrives.</p>
+      </div>
+    </div>
+    <div class="tl-item last">
+      <div class="tl-bubble"><span>✓</span></div>
+      <div class="tl-card">
+        <h3>You're Safe — Incident Logged</h3>
+        <p>Mark yourself safe. Incident details, audio recordings, and location trail are securely stored as a report.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░░ LIVE DEMO ░░░░ -->
+<section class="demo-section" id="demo">
+  <div class="section-tag">✦ Interactive Demo</div>
+  <h2 class="section-title">Try SafeHer<br><em>right here.</em></h2>
+  <div class="demo-wrap">
+
+    <!-- Phone Mockup -->
+    <div class="demo-phone-wrap">
+      <div class="demo-phone">
+        <div class="phone-notch"></div>
+        <div id="demoScreen" class="demo-screen home-screen">
+          <div class="ds-header">
+            <span>♡ SafeHer</span>
+            <span id="safeStatus" class="safe-tag">🟢 Safe</span>
+          </div>
+          <p class="ds-greeting">Hello, <strong>Priya</strong> ✨</p>
+          <p class="ds-sub">You are safe. Location sharing is ON.</p>
+
+          <div class="sos-area">
+            <div class="demo-sos-ring dr3"></div>
+            <div class="demo-sos-ring dr2"></div>
+            <div class="demo-sos-ring dr1"></div>
+            <button class="demo-sos-btn" id="sosBtn" onclick="activateSOS()">SOS</button>
+          </div>
+
+          <div class="demo-quick-btns">
+            <button class="dq-btn" onclick="showFakeCall()">📞 Fake Call</button>
+            <button class="dq-btn" onclick="showCheckin()">✅ Check-In</button>
+          </div>
+
+          <div class="demo-contacts-mini">
+            <p class="dcm-label">Your Trusted Circle</p>
+            <div class="dcm-row"><span>👩 Mom</span><span class="online-dot">●</span></div>
+            <div class="dcm-row"><span>👩‍🦱 Anjali</span><span class="online-dot">●</span></div>
+            <div class="dcm-row"><span>👮‍♀️ Campus Guard</span><span style="color:#c084fc;font-size:0.7rem">24/7</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Demo Controls & Info -->
+    <div class="demo-controls">
+      <h3>Test the features ✨</h3>
+
+      <div class="demo-add-contact">
+        <h4>➕ Add Trusted Contact</h4>
+        <div class="demo-form-row">
+          <input type="text" id="contactName" placeholder="Name (e.g. Meera)" class="demo-input"/>
+          <input type="text" id="contactPhone" placeholder="Phone number" class="demo-input"/>
+        </div>
+        <button class="btn-primary small-btn" onclick="addContact()">Add Contact ♡</button>
+        <div id="contactList" class="contact-list-live"></div>
+      </div>
+
+      <div class="demo-checkin">
+        <h4>⏱ Set Check-In Timer</h4>
+        <div class="demo-form-row">
+          <select id="checkinTime" class="demo-input">
+            <option>5 minutes</option>
+            <option>10 minutes</option>
+            <option>15 minutes</option>
+            <option>30 minutes</option>
+          </select>
+          <button class="btn-primary small-btn" onclick="startCheckin()">Start Timer</button>
+        </div>
+        <div id="checkinStatus" class="checkin-status"></div>
+      </div>
+
+      <div class="demo-msg">
+        <h4>✏️ Custom SOS Message</h4>
+        <textarea class="demo-input demo-ta" placeholder="e.g. I need help! I'm near the library block. Please call police.">I need help! Please send help immediately. Track my location.</textarea>
+        <button class="btn-primary small-btn" onclick="saveMsg()">Save Message ♡</button>
+      </div>
+
+      <div id="alertBanner" class="alert-banner hidden">
+        🚨 SOS ACTIVATED — All contacts notified! Live location being shared.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░░ TEAM ░░░░ -->
+<section class="team" id="team">
+  <div class="section-tag">✦ The Team</div>
+  <h2 class="section-title">Made with <em>♡</em> by</h2>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-av">👩‍💻</div>
+      <h4>Project Lead</h4>
+      <p>System Design & Architecture</p>
+      <span class="team-tag">SPM Planning</span>
+    </div>
+    <div class="team-card">
+      <div class="team-av">👩‍🔬</div>
+      <h4>Backend Developer</h4>
+      <p>API, Database & Alert Engine</p>
+      <span class="team-tag">Node.js / Firebase</span>
+    </div>
+    <div class="team-card">
+      <div class="team-av">👩‍🎨</div>
+      <h4>Frontend Developer</h4>
+      <p>UI/UX Design & Prototyping</p>
+      <span class="team-tag">HTML/CSS/JS</span>
+    </div>
+    <div class="team-card">
+      <div class="team-av">👩‍🏫</div>
+      <h4>QA & Documentation</h4>
+      <p>Testing, SRS & Reports</p>
+      <span class="team-tag">Test Planning</span>
+    </div>
+  </div>
+  <div class="project-info-strip">
+    <p>📚 <strong>Software Project Management</strong> &nbsp;✦&nbsp; 📱 <strong>Women Safety Emergency Alert App: SOS + Location Sharing</strong> &nbsp;✦&nbsp; 2025</p>
+  </div>
+</section>
+
+<!-- ░░░░ FOOTER ░░░░ -->
+<footer class="footer">
+  <div class="footer-logo">♡ Safe<em>Her</em></div>
+  <p>Women Safety Emergency Alert System · Software Project Management · 2025</p>
+  <p class="footer-heart">Made with love 💗 for every woman's safety</p>
+</footer>
+
+<!-- ░░░░ SOS OVERLAY ░░░░ -->
+<div id="sosOverlay" class="sos-overlay hidden">
+  <div class="sos-overlay-inner">
+    <div class="sos-pulse-icon">🆘</div>
+    <h2>SOS ALERT SENT</h2>
+    <p>Your live location is being shared with:</p>
+    <div class="overlay-contacts">
+      <div class="oc-row">👩 Mom — <strong>SMS Sent ✓</strong></div>
+      <div class="oc-row">👩‍🦱 Anjali — <strong>SMS Sent ✓</strong></div>
+      <div class="oc-row">👮‍♀️ Campus Security — <strong>Alerted ✓</strong></div>
+    </div>
+    <p class="overlay-loc">📍 Location: Lat 18.5204° N, Lon 73.8567° E</p>
+    <button class="btn-safe" onclick="closeSOS()">✓ I'm Safe Now</button>
+  </div>
+</div>
+
+<!-- ░░░░ FAKE CALL OVERLAY ░░░░ -->
+<div id="fakeCallOverlay" class="fake-call-overlay hidden">
+  <div class="fc-inner">
+    <div class="fc-icon">📞</div>
+    <p class="fc-name">Mom</p>
+    <p class="fc-sub">Incoming Call...</p>
+    <div class="fc-btns">
+      <button class="fc-decline" onclick="closeFakeCall()">✕ Decline</button>
+      <button class="fc-accept" onclick="closeFakeCall()">✓ Accept</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Navbar scroll
+  window.addEventListener('scroll', () => {
+    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Phone SOS (hero)
+  function triggerSOSPhone(btn) {
+    btn.textContent = '🚨';
+    btn.style.background = '#ff4444';
+    setTimeout(() => { btn.textContent = 'SOS'; btn.style.background = ''; }, 2000);
+  }
+
+  // Demo SOS
+  function activateSOS() {
+    document.getElementById('sosOverlay').classList.remove('hidden');
+    document.getElementById('safeStatus').textContent = '🔴 ALERT';
+    document.getElementById('safeStatus').style.color = '#ef4444';
+    document.getElementById('alertBanner').classList.remove('hidden');
+    document.getElementById('sosBtn').classList.add('sos-active');
+  }
+
+  function closeSOS() {
+    document.getElementById('sosOverlay').classList.add('hidden');
+    document.getElementById('safeStatus').textContent = '🟢 Safe';
+    document.getElementById('safeStatus').style.color = '';
+    document.getElementById('alertBanner').classList.add('hidden');
+    document.getElementById('sosBtn').classList.remove('sos-active');
+  }
+
+  // Fake call
+  function showFakeCall() {
+    document.getElementById('fakeCallOverlay').classList.remove('hidden');
+  }
+  function closeFakeCall() {
+    document.getElementById('fakeCallOverlay').classList.add('hidden');
+  }
+
+  // Check-in
+  function showCheckin() {
+    document.getElementById('checkinStatus').textContent = '⏱ Timer set! You have 10 min to check-in.';
+    document.getElementById('checkinStatus').style.color = '#be185d';
+  }
+
+  // Add contact
+  let contacts = [];
+  function addContact() {
+    const name = document.getElementById('contactName').value.trim();
+    const phone = document.getElementById('contactPhone').value.trim();
+    if (!name) return;
+    contacts.push({ name, phone });
+    document.getElementById('contactName').value = '';
+    document.getElementById('contactPhone').value = '';
+    renderContacts();
+  }
+  function renderContacts() {
+    const list = document.getElementById('contactList');
+    list.innerHTML = contacts.map(c => `
+      <div class="live-contact-row">
+        <span>👩 ${c.name}</span>
+        <span class="lc-phone">${c.phone || '—'}</span>
+        <span class="online-dot">●</span>
+      </div>`).join('');
+  }
+
+  // Check-in timer
+  function startCheckin() {
+    const time = document.getElementById('checkinTime').value;
+    document.getElementById('checkinStatus').textContent = `✅ Check-in timer set for ${time}. Stay safe! 💗`;
+    document.getElementById('checkinStatus').style.color = '#be185d';
+  }
+
+  // Save msg
+  function saveMsg() {
+    const btn = event.target;
+    btn.textContent = 'Saved ✓';
+    setTimeout(() => btn.textContent = 'Save Message ♡', 1500);
+  }
+</script>
+</body>
+</html>
