@@ -1,61 +1,63 @@
-# 🅿 ParkEase – Campus Parking Slot Booking System
+# 💗 SafeHer – Women Safety Emergency Alert App
 
 > **Subject:** Software Project Management  
-> **Topic:** Parking Slot Booking for Campus  
+> **Topic:** Women Safety Emergency Alert App — SOS + Location Sharing Prototype  
 > **Academic Year:** 2024–25
 
 ---
 
-## 📌 Project Overview
+## 🌸 Project Overview
 
-**ParkEase** is a web-based campus parking management system that allows students, faculty, and staff to **reserve parking slots in advance**, view **real-time availability**, and enter/exit campus using a **QR code**. It eliminates the inefficiency of manually searching for parking spots on a busy campus.
+**SafeHer** is a mobile-first emergency safety application designed for women. It enables users to send an **instant SOS alert** with their **live GPS location** to a trusted circle of contacts and campus/local authorities — in a single tap, even from a locked screen.
+
+The project addresses the critical real-world need for accessible, real-time safety tools for women on college campuses and beyond.
 
 ---
 
 ## 🎯 Objectives
 
-- Reduce vehicle congestion at campus entry points
-- Provide a digital, contactless parking experience
-- Give administrators real-time visibility of parking utilization
-- Ensure fair allocation of limited parking resources
+- Enable instant SOS alerts with one tap or gesture (no unlocking needed)
+- Share live GPS location with trusted contacts in real-time
+- Provide covert safety features (fake call, silent recording)
+- Empower women with preventive tools (safe route planner, heatmap)
+- Create an admin/authority dashboard for incident tracking
 
 ---
 
 ## 🗂️ Repository Structure
 
 ```
-parking-slot-booking/
+safeher-sos-app/
 │
-├── index.html          # Main UI – Home, Booking, Live Map, Team
-├── style.css           # Full responsive stylesheet
-├── README.md           # Project documentation (this file)
+├── index.html              # Main UI prototype — all screens
+├── style.css               # Blush rose gold aesthetic stylesheet
+├── README.md               # Project documentation (this file)
 │
 ├── diagrams/
-│   ├── use_case_diagram.png        # UML Use Case Diagram
-│   ├── er_diagram.png              # Entity-Relationship Diagram
-│   ├── dfd_level0.png              # DFD Level 0 (Context Diagram)
-│   ├── dfd_level1.png              # DFD Level 1
-│   ├── class_diagram.png           # Class Diagram
-│   ├── sequence_diagram.png        # Sequence Diagram – Booking Flow
-│   └── system_architecture.png     # System Architecture Overview
+│   ├── use_case_diagram.svg         # UML Use Case Diagram
+│   ├── er_diagram.svg               # Entity-Relationship Diagram
+│   ├── dfd_level0.svg               # DFD Level 0 (Context Diagram)
+│   ├── sequence_diagram.svg         # Sequence Diagram – SOS Flow
+│   └── system_architecture.svg      # Full System Architecture
 │
 └── report/
-    └── SPM_ParkEase_Report.pdf     # Full project report
+    └── SPM_SafeHer_Report.pdf       # Full project report (add here)
 ```
 
 ---
 
-## ⚙️ Key Features
+## 🚨 Core Features
 
 | Feature | Description |
 |--------|-------------|
-| 🔐 Campus SSO Login | Authenticate via university credentials |
-| 📍 Real-Time Slot Map | Live view of available / occupied / reserved slots |
-| 📅 Advance Booking | Reserve slot up to 7 days in advance |
-| 📱 QR Code Entry | Auto-generated QR for contactless gate access |
-| 🔔 Notifications | Email/SMS alerts for confirmations and reminders |
-| 📊 Admin Dashboard | Utilization analytics, violation tracking |
-| ♿ Priority Zones | Dedicated slots for faculty, EV, differently-abled |
+| 🆘 One-Tap SOS | Triggers emergency alert even from lock screen |
+| 📍 Live Location Sharing | Real-time GPS sent to trusted contacts + authorities |
+| 🎙️ Covert Audio Recording | Silent evidence recording stored securely in cloud |
+| 👭 Trusted Circle | Up to 10 contacts notified via SMS + push notification |
+| 📞 Fake Call | Triggers a fake incoming call to escape a situation |
+| ✅ Check-In Reminders | Auto SOS if check-in is missed within time window |
+| 🗺️ Safe Route Planner | AI-suggested routes avoiding high-incident zones |
+| 📊 Incident Heatmap | Community-powered safety awareness map |
 
 ---
 
@@ -63,23 +65,30 @@ parking-slot-booking/
 
 | Layer | Technology |
 |-------|-----------|
-| Frontend | HTML5, CSS3, JavaScript |
-| Backend | Node.js / Django REST API |
-| Database | MySQL / PostgreSQL |
-| Auth | JWT + University SSO (OAuth2) |
-| Notifications | Firebase Cloud Messaging / Twilio SMS |
-| Deployment | AWS / Heroku / College Server |
+| Frontend | HTML5, CSS3, JavaScript (Prototype) |
+| Mobile App | Flutter / React Native |
+| Backend | Node.js + Express REST API |
+| Database | Firebase Firestore (real-time) + PostgreSQL |
+| Auth | Firebase Authentication (Phone OTP) |
+| Location | Google Maps API + GPS |
+| Notifications | Firebase Cloud Messaging + Twilio SMS |
+| Storage | Firebase Storage (audio evidence) |
+| Deployment | Google Cloud / AWS |
 
 ---
 
 ## 🧩 System Modules
 
-1. **User Authentication Module** – Role-based access (Student / Faculty / Admin)
-2. **Booking Module** – Slot selection, time window, vehicle info
-3. **Slot Management Module** – Real-time sensor/status updates
-4. **QR Gate Module** – Code generation and gate integration
-5. **Admin Module** – Dashboard, reports, override controls
-6. **Notification Module** – Email/SMS triggers
+1. **User Authentication Module** — Phone OTP verification, profile setup
+2. **SOS Trigger Module** — One-tap / gesture / shake detection
+3. **Location Module** — Real-time GPS sharing, route tracking, trail storage
+4. **Notification Module** — Push notification + SMS to trusted contacts
+5. **Trusted Contacts Module** — Add/remove/manage emergency circle
+6. **Fake Call Module** — Fake incoming call simulation
+7. **Check-In Module** — Timed check-in with auto SOS fallback
+8. **Admin/Authority Module** — Dashboard for campus security, police portal
+9. **Heatmap Module** — Community incident reports and zone visualization
+10. **Evidence Module** — Secure cloud storage for audio, location trails
 
 ---
 
@@ -87,20 +96,32 @@ parking-slot-booking/
 
 - ✅ Use Case Diagram
 - ✅ Entity-Relationship (ER) Diagram
-- ✅ Data Flow Diagram – Level 0 & Level 1
-- ✅ Class Diagram
-- ✅ Sequence Diagram (Booking Flow)
+- ✅ Data Flow Diagram – Level 0 (Context Diagram)
+- ✅ Sequence Diagram – SOS Alert Flow
 - ✅ System Architecture Diagram
 
 ---
 
 ## 📋 SPM Artifacts
 
-- **SRS** – Software Requirements Specification
-- **Project Schedule** – Gantt Chart (in Report PDF)
-- **Risk Register** – Identified risks and mitigation strategies
+- **SRS** – Software Requirements Specification (Functional + Non-Functional)
 - **WBS** – Work Breakdown Structure
-- **Test Plan** – Unit, Integration, and UAT test cases
+- **Gantt Chart** – Project timeline (in Report PDF)
+- **Risk Register** – Identified risks with mitigation strategies
+- **Test Plan** – Unit tests, Integration tests, UAT for all modules
+- **Use Case Specifications** – Detailed use case write-ups
+
+---
+
+## 📱 UI Prototype Screens (index.html)
+
+The prototype demonstrates:
+- ✅ Home screen with SOS button and live status
+- ✅ Trusted contacts panel
+- ✅ Fake call overlay
+- ✅ Check-in timer
+- ✅ Custom SOS message editor
+- ✅ SOS activation overlay with contact notification simulation
 
 ---
 
@@ -108,14 +129,22 @@ parking-slot-booking/
 
 | Role | Responsibility |
 |------|---------------|
-| Project Lead | System Design, Architecture, Coordination |
-| Backend Developer | Database Design, REST API |
-| Frontend Developer | UI/UX, Prototyping, index.html |
-| QA Engineer | Test Planning, Documentation |
+| Project Lead | System Design, Planning, Architecture, SPM docs |
+| Backend Developer | API, Database, Firebase, Location Engine |
+| Frontend Developer | UI/UX, Prototype, index.html + style.css |
+| QA Engineer | Test Planning, SRS Documentation, Reports |
+
+---
+
+## 💗 Why SafeHer?
+
+> *"1 in 3 women globally experience physical or sexual violence. Technology cannot solve everything — but it can buy time, alert help, and save lives."*
+
+SafeHer is not just an academic project. It is a prototype with real-world potential for deployment on any college campus, giving every woman a direct line to safety in her pocket.
 
 ---
 
 ## 📄 License
 
-This project is created for academic purposes under the Software Project Management course.  
-© 2025 – All rights reserved by the project team.
+Created for academic purposes under the Software Project Management course.  
+© 2025 – SafeHer Team. All rights reserved.
