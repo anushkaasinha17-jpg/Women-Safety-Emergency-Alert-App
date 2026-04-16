@@ -1,0 +1,84 @@
+<svg viewBox="0 0 900 580" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="hdr4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f43f6e"/><stop offset="100%" style="stop-color:#f97fb0"/>
+    </linearGradient>
+    <marker id="ar3" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f43f6e"/>
+    </marker>
+    <marker id="ar4" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#b5708a"/>
+    </marker>
+  </defs>
+  <rect width="900" height="580" fill="#fff5f7"/>
+  <rect width="900" height="50" fill="url(#hdr4)"/>
+  <text x="450" y="32" text-anchor="middle" fill="white" font-size="17" font-weight="700">Sequence Diagram – SOS Alert Flow – SafeHer</text>
+
+  <!-- Lifeline headers -->
+  <rect x="30" y="62" width="110" height="40" rx="10" fill="#ffe4ec" stroke="#f43f6e" stroke-width="1.5"/>
+  <text x="85" y="87" text-anchor="middle" fill="#c2185b" font-size="11" font-weight="700">Woman User</text>
+
+  <rect x="200" y="62" width="110" height="40" rx="10" fill="#fff5f7" stroke="#f43f6e" stroke-width="1.5"/>
+  <text x="255" y="87" text-anchor="middle" fill="#c2185b" font-size="11" font-weight="700">SafeHer App</text>
+
+  <rect x="370" y="62" width="110" height="40" rx="10" fill="#fff5f7" stroke="#d4967e" stroke-width="1.5"/>
+  <text x="425" y="87" text-anchor="middle" fill="#d4967e" font-size="11" font-weight="700">Backend API</text>
+
+  <rect x="540" y="62" width="110" height="40" rx="10" fill="#f3e8ff" stroke="#c084fc" stroke-width="1.5"/>
+  <text x="595" y="87" text-anchor="middle" fill="#7e22ce" font-size="11" font-weight="700">SMS Service</text>
+
+  <rect x="710" y="62" width="110" height="40" rx="10" fill="#d1fae5" stroke="#6ee7b7" stroke-width="1.5"/>
+  <text x="765" y="87" text-anchor="middle" fill="#065f46" font-size="11" font-weight="700">Trusted Contact</text>
+
+  <!-- Lifelines -->
+  <line x1="85" y1="102" x2="85" y2="560" stroke="#fda4af" stroke-width="1.5" stroke-dasharray="6"/>
+  <line x1="255" y1="102" x2="255" y2="560" stroke="#fda4af" stroke-width="1.5" stroke-dasharray="6"/>
+  <line x1="425" y1="102" x2="425" y2="560" stroke="#fce7ef" stroke-width="1.5" stroke-dasharray="6"/>
+  <line x1="595" y1="102" x2="595" y2="560" stroke="#f3e8ff" stroke-width="1.5" stroke-dasharray="6"/>
+  <line x1="765" y1="102" x2="765" y2="560" stroke="#d1fae5" stroke-width="1.5" stroke-dasharray="6"/>
+
+  <!-- Step labels -->
+  <text x="10" y="148" fill="#b5708a" font-size="10">1</text>
+  <line x1="85" y1="145" x2="255" y2="145" stroke="#f43f6e" stroke-width="2" marker-end="url(#ar3)"/>
+  <text x="165" y="138" text-anchor="middle" fill="#7c3d5a" font-size="11" font-weight="600">Press SOS Button</text>
+
+  <text x="10" y="188" fill="#b5708a" font-size="10">2</text>
+  <line x1="255" y1="185" x2="85" y2="185" stroke="#b5708a" stroke-width="1.5" stroke-dasharray="5" marker-end="url(#ar4)"/>
+  <text x="165" y="178" text-anchor="middle" fill="#b5708a" font-size="10">Vibrate + screen flash</text>
+
+  <text x="10" y="228" fill="#b5708a" font-size="10">3</text>
+  <line x1="255" y1="225" x2="425" y2="225" stroke="#f43f6e" stroke-width="2" marker-end="url(#ar3)"/>
+  <text x="338" y="218" text-anchor="middle" fill="#7c3d5a" font-size="11" font-weight="600">POST /sos { userId, lat, lng }</text>
+
+  <text x="10" y="268" fill="#b5708a" font-size="10">4</text>
+  <line x1="425" y1="265" x2="255" y2="265" stroke="#b5708a" stroke-width="1.5" stroke-dasharray="5" marker-end="url(#ar4)"/>
+  <text x="338" y="258" text-anchor="middle" fill="#b5708a" font-size="10">alert_id returned</text>
+
+  <text x="10" y="308" fill="#b5708a" font-size="10">5</text>
+  <line x1="425" y1="305" x2="595" y2="305" stroke="#c084fc" stroke-width="2" marker-end="url(#ar3)"/>
+  <text x="508" y="298" text-anchor="middle" fill="#7c3d5a" font-size="11" font-weight="600">Send SMS to contacts</text>
+
+  <text x="10" y="348" fill="#b5708a" font-size="10">6</text>
+  <line x1="595" y1="345" x2="765" y2="345" stroke="#6ee7b7" stroke-width="2" marker-end="url(#ar3)"/>
+  <text x="678" y="338" text-anchor="middle" fill="#065f46" font-size="11" font-weight="600">SMS: SOS + location link</text>
+
+  <text x="10" y="388" fill="#b5708a" font-size="10">7</text>
+  <line x1="425" y1="385" x2="255" y2="385" stroke="#b5708a" stroke-width="1.5" stroke-dasharray="5" marker-end="url(#ar4)"/>
+  <text x="338" y="378" text-anchor="middle" fill="#b5708a" font-size="10">Live location push stream</text>
+
+  <text x="10" y="428" fill="#b5708a" font-size="10">8</text>
+  <line x1="255" y1="425" x2="85" y2="425" stroke="#b5708a" stroke-width="1.5" stroke-dasharray="5" marker-end="url(#ar4)"/>
+  <text x="165" y="418" text-anchor="middle" fill="#b5708a" font-size="10">Screen: "Alert Sent ✓"</text>
+
+  <text x="10" y="468" fill="#b5708a" font-size="10">9</text>
+  <line x1="85" y1="465" x2="255" y2="465" stroke="#f43f6e" stroke-width="2" marker-end="url(#ar3)"/>
+  <text x="165" y="458" text-anchor="middle" fill="#7c3d5a" font-size="11" font-weight="600">Tap "I'm Safe"</text>
+
+  <text x="10" y="508" fill="#b5708a" font-size="10">10</text>
+  <line x1="255" y1="505" x2="425" y2="505" stroke="#f43f6e" stroke-width="2" marker-end="url(#ar3)"/>
+  <text x="338" y="498" text-anchor="middle" fill="#7c3d5a" font-size="11" font-weight="600">PATCH /sos/resolve</text>
+
+  <text x="10" y="548" fill="#b5708a" font-size="10">11</text>
+  <line x1="425" y1="545" x2="595" y2="545" stroke="#c084fc" stroke-width="2" marker-end="url(#ar3)"/>
+  <text x="508" y="538" text-anchor="middle" fill="#7c3d5a" font-size="11" font-weight="600">Notify contacts: User is safe ✓</text>
+</svg>
